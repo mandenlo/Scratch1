@@ -19,7 +19,24 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="51"></block>
+                      <block type="movement_stop" id="51">
+                        <next>
+                          <block type="movement_right" id="61">
+                            <next>
+                              <block type="robot_delay" id="62" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="63">
+                                    <field name="NUM">2000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="64"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
